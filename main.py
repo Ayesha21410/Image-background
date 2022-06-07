@@ -23,7 +23,9 @@ class QuizStarter:
              #continue button
         self.continue_button = Button(parent, text="Continue", font=("Helvetica", "13", "bold"), bg="#fca8f9", command=self.name_collection)
         self.continue_button.place(x=268,y=360)
-      def name_collection(self):
+
+
+    def name_collection(self):
         name=self.entry_box.get()
         if name == '':
             messagebox.showerror('Name is Vital!!!',
@@ -48,3 +50,4 @@ class QuizStarter:
             self.user_label.destroy()
             self.heading_label.destroy()
             Quiz(root)
+      
