@@ -20,3 +20,6 @@ class QuizStarter:
              #entry box
         self.entry_box=Entry(parent)
         self.entry_box.place(x=230, y=320)
+             #continue button
+        self.continue_button = Button(parent, text="Continue", font=("Helvetica", "13", "bold"), bg="#fca8f9", command=self.name_collection)
+        self.continue_button.place(x=268,y=360)
